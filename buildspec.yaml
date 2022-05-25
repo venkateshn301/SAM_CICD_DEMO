@@ -5,7 +5,7 @@ phases:
         python: 3.7
   build:
     commands:
-      - sam package --template-file template.yml --s3-bucket s3jsondynamodb --output-template-file packaged-template.yml
+      - sam package --template-file template.yaml --s3-bucket s3jsondynamodb --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
